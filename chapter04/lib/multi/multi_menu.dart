@@ -1,3 +1,4 @@
+import 'package:chapter04/multi/column_page.dart';
 import 'package:chapter04/multi/container_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,15 @@ class MultiMenu extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ContainerPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Column'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ColumnPage()),
               );
             },
           ),
