@@ -1,3 +1,4 @@
+import 'package:chapter04/menu_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,19 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('제목'),
-      ),
-      body: Text('여기에 예제 작성'),
+      home: MenuPage(),
     );
   }
 }
