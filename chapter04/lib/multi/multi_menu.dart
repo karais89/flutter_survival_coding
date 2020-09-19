@@ -11,26 +11,36 @@ class MultiMenu extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          ListTile(
-            title: Text('Container'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => ContainerPage()),
-              );
-            },
+          MyListTile(
+            title: 'Container',
+            page: ContainerPage(),
           ),
-          ListTile(
-            title: Text('Column'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => ColumnPage()),
-              );
-            },
+          MyListTile(
+            title: 'Column',
+            page: ColumnPage(),
           ),
         ],
       ),
+    );
+  }
+}
+
+class MyListTile extends StatelessWidget {
+  final String title;
+  final Widget page;
+
+  MyListTile({this.title, this.page});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      title: Text(title),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => page),
+        );
+      },
     );
   }
 }
