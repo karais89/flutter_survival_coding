@@ -1,3 +1,4 @@
+import 'package:chapter04/multi/bottom_navigation_bar_page.dart';
 import 'package:chapter04/multi/column_page.dart';
 import 'package:chapter04/multi/container_page.dart';
 import 'package:chapter04/multi/grid_view_page.dart';
@@ -53,6 +54,10 @@ class MultiMenu extends StatelessWidget {
           MyListTile(
             title: 'Tab',
             page: TabPage(),
+          ),
+          MyListTile(
+            title: 'BottomNavigationBar',
+            page: BottomNavigationBarPage(),
           ),
         ],
       ),
