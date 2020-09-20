@@ -10,7 +10,7 @@ class MenuPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('플러터 생존코딩 4~6장 예제'),
+        title: Text('플러터 생존코딩 4장 예제'),
       ),
       body: ListView(
         children: <Widget>[
