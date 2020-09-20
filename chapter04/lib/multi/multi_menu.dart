@@ -6,6 +6,7 @@ import 'package:chapter04/multi/page_view_page.dart';
 import 'package:chapter04/multi/row_page.dart';
 import 'package:chapter04/multi/single_child_scroll_view_page.dart';
 import 'package:chapter04/multi/stack_page.dart';
+import 'package:chapter04/multi/tab_page.dart';
 import 'package:flutter/material.dart';
 
 class MultiMenu extends StatelessWidget {
@@ -48,6 +49,10 @@ class MultiMenu extends StatelessWidget {
           MyListTile(
             title: 'PageView',
             page: PageViewPage(),
+          ),
+          MyListTile(
+            title: 'Tab',
+            page: TabPage(),
           ),
         ],
       ),
