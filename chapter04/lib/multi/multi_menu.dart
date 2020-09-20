@@ -1,5 +1,6 @@
 import 'package:chapter04/multi/column_page.dart';
 import 'package:chapter04/multi/container_page.dart';
+import 'package:chapter04/multi/row_page.dart';
 import 'package:flutter/material.dart';
 
 class MultiMenu extends StatelessWidget {
@@ -18,6 +19,10 @@ class MultiMenu extends StatelessWidget {
           MyListTile(
             title: 'Column',
             page: ColumnPage(),
+          ),
+          MyListTile(
+            title: 'Row',
+            page: RowPage(),
           ),
         ],
       ),
