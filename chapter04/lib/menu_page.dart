@@ -1,3 +1,4 @@
+import 'package:chapter04/button/button_menu.dart';
 import 'package:chapter04/layout/layout_menu.dart';
 import 'package:chapter04/multi/multi_menu.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,10 @@ class MenuPage extends StatelessWidget {
           MyListTile(
             title: '4.3 위치,정렬,크기를 위한 위젯',
             page: LayoutMenu(),
+          ),
+          MyListTile(
+            title: '4.4 버튼 계열 위젯',
+            page: ButtonMenu(),
           ),
         ],
       ),
