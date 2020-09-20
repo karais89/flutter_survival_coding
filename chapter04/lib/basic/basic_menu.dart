@@ -1,3 +1,4 @@
+import 'package:chapter04/basic/image_page.dart';
 import 'package:chapter04/basic/text_page.dart';
 import 'package:chapter04/component/my_list_tile.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,10 @@ class BasicMenu extends StatelessWidget {
           MyListTile(
             title: 'Text',
             page: TextPage(),
+          ),
+          MyListTile(
+            title: 'Image',
+            page: ImagePage(),
           ),
         ],
       ),
