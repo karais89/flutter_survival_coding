@@ -1,3 +1,4 @@
+import 'package:chapter04/basic/circle_avatar_page.dart';
 import 'package:chapter04/basic/icon_page.dart';
 import 'package:chapter04/basic/image_page.dart';
 import 'package:chapter04/basic/progress_page.dart';
@@ -29,6 +30,10 @@ class BasicMenu extends StatelessWidget {
           MyListTile(
             title: 'Progress',
             page: ProgressPage(),
+          ),
+          MyListTile(
+            title: 'CircleAvatar',
+            page: CircleAvatarPage(),
           ),
         ],
       ),
