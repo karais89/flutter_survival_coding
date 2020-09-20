@@ -1,3 +1,4 @@
+import 'package:chapter04/basic/basic_menu.dart';
 import 'package:chapter04/button/button_menu.dart';
 import 'package:chapter04/layout/layout_menu.dart';
 import 'package:chapter04/multi/multi_menu.dart';
@@ -24,6 +25,10 @@ class MenuPage extends StatelessWidget {
           MyListTile(
             title: '4.4 버튼 계열 위젯',
             page: ButtonMenu(),
+          ),
+          MyListTile(
+            title: '4.5 화면 표시용 위젯',
+            page: BasicMenu(),
           ),
         ],
       ),
