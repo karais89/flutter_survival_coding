@@ -1,5 +1,6 @@
 import 'package:chapter04/multi/column_page.dart';
 import 'package:chapter04/multi/container_page.dart';
+import 'package:chapter04/multi/grid_view_page.dart';
 import 'package:chapter04/multi/list_view_page.dart';
 import 'package:chapter04/multi/row_page.dart';
 import 'package:chapter04/multi/single_child_scroll_view_page.dart';
@@ -38,6 +39,10 @@ class MultiMenu extends StatelessWidget {
           MyListTile(
             title: 'ListView',
             page: ListViewPage(),
+          ),
+          MyListTile(
+            title: 'GridView',
+            page: GridViewPage(),
           ),
         ],
       ),
