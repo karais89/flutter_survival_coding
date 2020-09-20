@@ -1,3 +1,4 @@
+import 'package:chapter04/component/my_list_tile.dart';
 import 'package:chapter04/multi/bottom_navigation_bar_page.dart';
 import 'package:chapter04/multi/column_page.dart';
 import 'package:chapter04/multi/container_page.dart';
@@ -61,26 +62,6 @@ class MultiMenu extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class MyListTile extends StatelessWidget {
-  final String title;
-  final Widget page;
-
-  MyListTile({this.title, this.page});
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      title: Text(title),
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => page),
-        );
-      },
     );
   }
 }

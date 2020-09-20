@@ -1,5 +1,7 @@
+import 'package:chapter04/layout/layout_menu.dart';
 import 'package:chapter04/multi/multi_menu.dart';
 import 'package:flutter/material.dart';
+import 'component/my_list_tile.dart';
 
 class MenuPage extends StatelessWidget {
   @override
@@ -10,13 +12,13 @@ class MenuPage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          ListTile(
-            title: Text('4.2 화면 배치를 위한 위젯'),
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return MultiMenu();
-              }));
-            },
+          MyListTile(
+            title: '4.2 화면 배치를 위한 위젯',
+            page: MultiMenu(),
+          ),
+          MyListTile(
+            title: '4.3 위치,정렬,크기를 위한 위젯',
+            page: LayoutMenu(),
           ),
         ],
       ),
