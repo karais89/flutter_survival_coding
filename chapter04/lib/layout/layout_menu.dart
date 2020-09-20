@@ -1,6 +1,7 @@
 import 'package:chapter04/component/my_list_tile.dart';
 import 'package:chapter04/layout/align_page.dart';
 import 'package:chapter04/layout/center_page.dart';
+import 'package:chapter04/layout/expanded_page.dart';
 import 'package:chapter04/layout/padding_page.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,10 @@ class LayoutMenu extends StatelessWidget {
           MyListTile(
             title: 'Align',
             page: AlignPage(),
+          ),
+          MyListTile(
+            title: 'Expanded',
+            page: ExpandedPage(),
           ),
         ],
       ),
