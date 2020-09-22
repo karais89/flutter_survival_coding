@@ -1,5 +1,6 @@
 import 'package:chapter05/component/my_list_tile.dart';
 import 'package:chapter05/dialog/alert_dialog_page.dart';
+import 'package:chapter05/dialog/date_picker_page.dart';
 import 'package:flutter/material.dart';
 
 class DialogMenu extends StatelessWidget {
@@ -14,6 +15,10 @@ class DialogMenu extends StatelessWidget {
           MyListTile(
             title: 'AlertDialog',
             page: AlertDialogPage(),
+          ),
+          MyListTile(
+            title: 'DatePicker',
+            page: DatePickerPage(),
           ),
         ],
       ),
