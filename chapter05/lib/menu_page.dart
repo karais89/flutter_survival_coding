@@ -1,3 +1,4 @@
+import 'package:chapter05/dialog/dialog_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:chapter05/component/my_list_tile.dart';
 import 'package:chapter05/input/input_menu.dart';
@@ -14,6 +15,10 @@ class MenuPage extends StatelessWidget {
           MyListTile(
             title: '5.1 입력용 위젯',
             page: InputMenu(),
+          ),
+          MyListTile(
+            title: '5.2 다이얼로그',
+            page: DialogMenu(),
           ),
         ],
       ),
