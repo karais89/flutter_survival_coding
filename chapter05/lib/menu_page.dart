@@ -1,3 +1,4 @@
+import 'package:chapter05/animation/animation_menu.dart';
 import 'package:chapter05/dialog/dialog_menu.dart';
 import 'package:chapter05/event/event_menu.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,10 @@ class MenuPage extends StatelessWidget {
           MyListTile(
             title: '5.3 이벤트',
             page: EventMenu(),
+          ),
+          MyListTile(
+            title: '5.4 애니메이션',
+            page: AnimationMenu(),
           ),
         ],
       ),
