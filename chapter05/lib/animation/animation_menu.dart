@@ -1,5 +1,6 @@
 import 'package:chapter05/animation/animated_container_page.dart';
 import 'package:chapter05/animation/hero_page.dart';
+import 'package:chapter05/animation/sliver_app_bar_page.dart';
 import 'package:chapter05/component/my_list_tile.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,10 @@ class AnimationMenu extends StatelessWidget {
           MyListTile(
             title: 'AnimatedContainer',
             page: AnimatedContainerPage(),
+          ),
+          MyListTile(
+            title: 'SliverAppBar',
+            page: SliverAppBarPage(),
           ),
         ],
       ),
