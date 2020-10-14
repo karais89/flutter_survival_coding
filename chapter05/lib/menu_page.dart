@@ -4,6 +4,7 @@ import 'package:chapter05/event/event_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:chapter05/component/my_list_tile.dart';
 import 'package:chapter05/input/input_menu.dart';
+import 'package:chapter05/cupertino/cupertino_menu.dart';
 
 class MenuPage extends StatelessWidget {
   @override
@@ -29,6 +30,10 @@ class MenuPage extends StatelessWidget {
           MyListTile(
             title: '5.4 애니메이션',
             page: AnimationMenu(),
+          ),
+          MyListTile(
+            title: '5.5 쿠퍼티노 디자인',
+            page: CupertinoMenu(),
           ),
         ],
       ),
